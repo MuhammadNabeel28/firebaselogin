@@ -7,14 +7,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
-     MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: 'login',
       routes: {
-        'login':(context) => const Login();
+        'login': (context) => const Login(),
       },
     ),
   );
 }
-
-
